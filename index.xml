@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drizzle</title>
+    <link>https://xuqingfeng.github.io/index.xml</link>
+    <description>Recent content on Drizzle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/xuqingfeng&#34;&gt;XuQingfeng&lt;/a&gt; 2016</copyright>
+    <lastBuildDate>Fri, 16 Dec 2016 18:09:53 +0800</lastBuildDate>
+    <atom:link href="https://xuqingfeng.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Lorem</title>
+      <link>https://xuqingfeng.github.io/lorem/</link>
+      <pubDate>Fri, 16 Dec 2016 18:09:53 +0800</pubDate>
+      
+      <guid>https://xuqingfeng.github.io/lorem/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+    &amp;quot;net/http&amp;quot;
+    &amp;quot;golang.org/x/net/http2&amp;quot;
+    &amp;quot;fmt&amp;quot;
+    &amp;quot;log&amp;quot;
+)
+
+func main() {
+
+    var srv http.Server
+    srv.Addr = &amp;quot;:8000&amp;quot;
+    http2.ConfigureServer(&amp;amp;srv, nil)
+
+    http.HandleFunc(&amp;quot;/&amp;quot;, serveRoot)
+    log.Fatal(srv.ListenAndServeTLS(&amp;quot;localhost.crt&amp;quot;, &amp;quot;localhost.key&amp;quot;))
+}
+
+func serveRoot(rw http.ResponseWriter, r *http.Request) {
+
+    fmt.Fprintf(rw, &amp;quot;root&amp;quot;)
+    log.Print(r.URL.Path)
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
