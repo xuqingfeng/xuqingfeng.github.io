@@ -13,6 +13,8 @@ variables:
   HUGO_VERSION: 0.53
   HUGO_DOWNLOAD_URL: https://github.com/gohugoio/hugo/releases/download/v$(HUGO_VERSION)/hugo_$(HUGO_VERSION)_Linux-64bit.tar.gz
   HUGO_TGZ: hugo.tgz
+  GH_NAME: xuqingfeng
+  GH_EMAIL: js-xqf@hotmail.com
 
 steps:
 - script: |
@@ -27,7 +29,9 @@ steps:
   displayName: 'Build site'
 
 - script: |
+    git config --global user.name $(GH_NAME)
+    git config --global user.email $(GH_EMAIL)
     git add .
     git commit -m 'Autocommit from Azure Pipelines'
-    git push origin
-  displayName: 'Git commit'
+    git push origin HEAD:master
+  displayName: 'Push changes back to Github'
