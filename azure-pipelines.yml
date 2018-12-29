@@ -15,6 +15,7 @@ variables:
   HUGO_TGZ: hugo.tgz
   GH_NAME: xuqingfeng
   GH_EMAIL: js-xqf@hotmail.com
+  REPO_URL: https://$(GH_NAME):$(GH_TOKEN)@github.com/xuqingfeng/xuqingfeng.github.io.git
 
 steps:
 - script: |
@@ -24,19 +25,20 @@ steps:
   displayName: 'Install hugo'
 
 - script: |
-    cd src
+    git config --global user.name $(GH_NAME)
+    git config --global user.email $(GH_EMAIL)
+    git clone $(REPO_URL) /tmp/xyz
+    cd /tmp/xyz/src
     hugo -d ../
-  displayName: 'Build site'
+  displayName: 'Clone and build site'
 
 - script: |
-    git remote -v
-  displayName: 'Test'
+    cd /tmp/xyz
+    git add .
+    git commit -m 'Autocommit from Azure Pipelines'
+    git push origin HEAD:master
+  displayName: 'Push changes back to Github'
 
-
-# - script: |
-#     git config --global user.name $(GH_NAME)
-#     git config --global user.email $(GH_EMAIL)
-#     git add .
-#     git commit -m 'Autocommit from Azure Pipelines'
-#     git push origin HEAD:master
-#   displayName: 'Push changes back to Github'
+- script: |
+    rm -rf /tmp/xyz
+  displayName: 'Cleanup'
