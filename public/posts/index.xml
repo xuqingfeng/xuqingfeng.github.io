@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Minimal</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Minimal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sample</title>
+      <link>/posts/sample/</link>
+      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sample/</guid>
+      <description>Travel is a new experience that can transport you out of your everyday routine to create memories with the ones you love. - Brian Chesky</description>
+    </item>
+    
+  </channel>
+</rss>
