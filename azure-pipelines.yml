@@ -16,7 +16,7 @@ variables:
 
 steps:
 - script: |
-    curl -o $(HUGO_TGZ) $(HUGO_DOWNLOAD_URL)
+    curl -o $(HUGO_TGZ) -L $(HUGO_DOWNLOAD_URL)
     tar xzvf $(HUGO_TGZ)
     sudo mv hugo /usr/local/bin
   displayName: 'Install hugo'
