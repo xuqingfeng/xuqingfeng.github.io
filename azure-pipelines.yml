@@ -29,9 +29,14 @@ steps:
   displayName: 'Build site'
 
 - script: |
-    git config --global user.name $(GH_NAME)
-    git config --global user.email $(GH_EMAIL)
-    git add .
-    git commit -m 'Autocommit from Azure Pipelines'
-    git push origin HEAD:master
-  displayName: 'Push changes back to Github'
+    git remote -v
+  displayName: 'Test'
+
+
+# - script: |
+#     git config --global user.name $(GH_NAME)
+#     git config --global user.email $(GH_EMAIL)
+#     git add .
+#     git commit -m 'Autocommit from Azure Pipelines'
+#     git push origin HEAD:master
+#   displayName: 'Push changes back to Github'
