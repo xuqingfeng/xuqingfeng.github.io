@@ -32,6 +32,8 @@ steps:
     git config --global user.email $(GH_EMAIL)
     git clone $(REPO_URL) /tmp/xyz
     cd /tmp/xyz/src
+    git submodule init
+    git submodule update
     hugo -d ../
   displayName: 'Clone and build site'
 
