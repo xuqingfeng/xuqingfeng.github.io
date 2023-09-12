@@ -1,7 +1,9 @@
 +++
-title = 'My First Post'
-date = 2023-09-12T23:07:31+08:00
-draft = true
+title: 'My First Post'
+date: 2023-09-12T23:07:31+08:00
+draft: true
+tags:
+  - test
 +++
 
 ## Introduction
