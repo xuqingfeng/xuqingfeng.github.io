@@ -7,6 +7,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 
 minify:
   disableXML: true
@@ -18,9 +19,17 @@ socialIcons:
   - name: stackoverflow
     url: https://stackoverflow.com/users/4036946/jsxqf
 
+taxonomies:
+  tag: tags
+
 menu:
   main:
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 50
+    - name: Archive
+      url: archives/
+      weight: 5
+    - name: Search
+      url: search/
+      weight: 10
+    - name: Tags
+      url: tags/
+      weight: 10
