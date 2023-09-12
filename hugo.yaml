@@ -1,0 +1,30 @@
+baseURL: "https://xuqingfeng.githhub.io/"
+title: "My New Hugo Site"
+theme: PaperMod
+paginate: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+socialIcons:
+  - name: github
+    url: https://github.com/xuqingfeng
+  - name: stackoverflow
+    url: https://stackoverflow.com/users/4036946/jsxqf
+
+menu:
+  main:
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: example.org
+      url: https://example.org
+      weight: 30
