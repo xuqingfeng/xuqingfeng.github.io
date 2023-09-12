@@ -33,3 +33,9 @@ menu:
     - name: Tags
       url: tags/
       weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
