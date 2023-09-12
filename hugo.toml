@@ -1,0 +1,4 @@
+baseURL = 'https://xuqingfeng.githhub.io/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'PaperMod'
