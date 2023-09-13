@@ -32,6 +32,7 @@ outputs:
     - JSON
 
 params:
+  env: production
   defaultTheme: auto
   homeInfoParams:
     Content: >
@@ -46,3 +47,5 @@ params:
       url: https://stackoverflow.com/users/4036946/jsxqf
     - name: RSS
       url: index.xml
+
+  comments: true
