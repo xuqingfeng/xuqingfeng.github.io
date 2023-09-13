@@ -15,7 +15,7 @@ minify:
 
 menu:
   main:
-    - name: Archive
+    - name: Archives
       url: archives/
       weight: 1
     - name: Tags
@@ -35,12 +35,14 @@ params:
   defaultTheme: auto
   homeInfoParams:
     Content: >
-      some introduction here
+      Hey there !
+
+      - This is a site collecting random thoughts and ideas from me working as DevOps Engineer.
 
   socialIcons:
-  - name: github
-    url: https://github.com/xuqingfeng
-  - name: stackoverflow
-    url: https://stackoverflow.com/users/4036946/jsxqf
-  - name: RSS
-    url: index.xml
+    - name: github
+      url: https://github.com/xuqingfeng
+    - name: stackoverflow
+      url: https://stackoverflow.com/users/4036946/jsxqf
+    - name: RSS
+      url: index.xml
