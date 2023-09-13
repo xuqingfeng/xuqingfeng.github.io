@@ -1,5 +1,5 @@
 baseURL: "https://xuqingfeng.githhub.io/"
-title: "My New Hugo Site"
+title: "Qingfeng's Blog"
 theme: PaperMod
 paginate: 5
 
@@ -12,9 +12,6 @@ enableEmoji: true
 minify:
   disableXML: true
   minifyOutput: true
-
-taxonomies:
-  tag: tags
 
 menu:
   main:
@@ -36,6 +33,10 @@ outputs:
 
 params:
   defaultTheme: auto
+  homeInfoParams:
+    Content: >
+      some introduction here
+
   socialIcons:
   - name: github
     url: https://github.com/xuqingfeng
