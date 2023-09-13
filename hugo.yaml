@@ -13,12 +13,6 @@ minify:
   disableXML: true
   minifyOutput: true
 
-socialIcons:
-  - name: github
-    url: https://github.com/xuqingfeng
-  - name: stackoverflow
-    url: https://stackoverflow.com/users/4036946/jsxqf
-
 taxonomies:
   tag: tags
 
@@ -26,16 +20,26 @@ menu:
   main:
     - name: Archive
       url: archives/
-      weight: 5
-    - name: Search
-      url: search/
-      weight: 10
+      weight: 1
     - name: Tags
       url: tags/
-      weight: 10
+      weight: 2
+    - name: Search
+      url: search/
+      weight: 3
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+
+params:
+  defaultTheme: auto
+  socialIcons:
+  - name: github
+    url: https://github.com/xuqingfeng
+  - name: stackoverflow
+    url: https://stackoverflow.com/users/4036946/jsxqf
+  - name: RSS
+    url: index.xml
