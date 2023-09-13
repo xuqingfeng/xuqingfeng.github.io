@@ -36,7 +36,7 @@ params:
   defaultTheme: auto
   homeInfoParams:
     Content: >
-      Hey there !
+      Hey there!
 
       - This is a site collecting random thoughts and ideas from me working as DevOps Engineer.
 
